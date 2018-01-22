@@ -20,19 +20,14 @@ class CSVScalePlugin:
       if (self.bacteria.count('\"\"') != 0):
          self.bacteria.remove('\"\"')
       self.n = len(self.bacteria)
-      self.ADJ = []#numpy.zeros([self.m, self.n])
+      self.ADJ = []
       i = 0
-      print "M: ", self.m
-      print "N: ", self.n
       for i in range(self.m):
             self.ADJ.append([])
             contents = lines[i].split(',')
             self.samples.append(contents[0])
-            print len(contents)
             for j in range(self.n):
-               #print contents[j+1]
                value = float(contents[j+1].strip())
-               #print self.ADJ[i][j]
                self.ADJ[i].append(value)#[j] = value
             i += 1
   
