@@ -1,6 +1,7 @@
 import sys
 import numpy
 import random
+import PyPluMA
 
 # Scaling is done to make median=1
 class CSVScalePlugin:
@@ -50,8 +51,8 @@ class CSVScalePlugin:
          vec.sort()
          median = vec[self.n/2][0]
          if (median == 0):
-            print "WARNING: ZERO MEDIAN"
-            print "VEC: ", vec
+            PyPluMA.log("WARNING: ZERO MEDIAN")
+            PyPluMA.log("VEC: "+str(vec))
          for j in range(self.n):
             self.ADJ[i][vec[j][1]] = vec[j][0] * 1.0/median
 
