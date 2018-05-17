@@ -1,0 +1,2 @@
+Prefix plugins/CSVScale/example/
+Plugin CSVScale inputfile simple_fully_connected_common_friend.csv outputfile simple_fully_connected_common_friend.scaled.csv
