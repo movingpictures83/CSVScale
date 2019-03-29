@@ -49,7 +49,7 @@ class CSVScalePlugin:
             if (vec[j][0] == 0):
                vec[j] = (minimum, vec[j][1])
          vec.sort()
-         median = vec[self.n/2][0]
+         median = vec[int(self.n/2)][0]
          if (median == 0):
             PyPluMA.log("WARNING: ZERO MEDIAN")
             PyPluMA.log("VEC: "+str(vec))

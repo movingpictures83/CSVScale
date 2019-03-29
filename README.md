@@ -2,7 +2,7 @@
 # Language: Python
 # Input: CSV (with zero entries)
 # Output: CSV (with scaled entries)
-# Tested with: PluMA 1.0, Python 2.7
+# Tested with: PluMA 1.0, Python 3.6
 
 PluMA plugin to scale CSV file values such that (1) zero entries are mapped to the minimum value
 and (2) the median value becomes 1.  This can be useful particularly for downstream analysis,
